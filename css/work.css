@@ -1,0 +1,89 @@
+/* General animation settings */
+.service-card {
+  opacity: 0;
+  transform: translate(0,0);
+  transition: all 0.8s ease-out;
+}
+
+/* Animate from left */
+.animate-left {
+  transform: translateX(-100px);
+  animation: slideLeft 5s forwards;
+}
+
+/* Animate from top */
+.animate-top {
+  transform: translateY(-100px);
+  animation: slideTop 5s forwards;
+}
+
+/* Animate from right */
+.animate-right {
+  transform: translateX(100px);
+  animation: slideRight 5s forwards;
+}
+
+/* Keyframes */
+@keyframes slideLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Top bar styling */
+.top-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1050; /* above other content but below navbar if needed */
+}
+
+/* Moving text container */
+.top-bar .container {
+  position: relative;
+  height: 24px; /* adjust height as needed */
+}
+
+/* Moving text animation */
+.moving-text {
+  position: absolute;
+  white-space: nowrap;
+  font-weight: bold;
+  animation: moveRight 30s linear infinite;
+}
+
+/* Keyframes to move text from left to right */
+@keyframes moveRight {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Adjust navbar position to not overlap top bar */
+#navbar {
+  margin-top: 24px; /* same as top bar height */
+  background:rgba(255, 255, 255, 0.8);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease, margin-top 0.4s ease;
+}
+
+/* Navbar scrolled style */
+#navbar.scrolled {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}

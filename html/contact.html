@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndawonye - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Top Moving Text Bar -->
+    <section class="moving-text-bar py-1 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div class="moving-text">
+            www.ndawonye.co.za &nbsp;&nbsp; | &nbsp;&nbsp; Build - Serve - Connect - Integrate
+        </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a class="flex items-center space-x-3 text-2xl font-bold text-gray-800" href="index.html">
+                    <img src="https://placehold.co/48x48/666/fff?text=L" alt="Ndawonye Logo" class="rounded-full w-12 h-12"> NDAWONYE
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a class="text-gray-800 hover:text-blue-500 font-medium transition-colors duration-300" href="/html/index.html">Home</a>
+                    <a class="text-gray-800 hover:text-blue-500 font-medium transition-colors duration-300" href="/html/about.html">About</a>
+                    <a class="text-gray-800 hover:text-blue-500 font-medium transition-colors duration-300" href="/html/services.html">Services</a>
+                    <a class="text-blue-500 font-medium transition-colors duration-300" href="/html/contact.html">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-button" class="text-gray-800 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="flex flex-col space-y-2 pb-4">
+                    <a class="block px-3 py-2 text-gray-800 font-medium hover:bg-gray-200 rounded-md" href="/html/index.html">Home</a>
+                    <a class="block px-3 py-2 text-gray-800 font-medium hover:bg-gray-200 rounded-md" href="/html/about.html">About</a>
+                    <a class="block px-3 py-2 text-gray-800 font-medium hover:bg-gray-200 rounded-md" href="/html/services.html">Services</a>
+                    <a class="block px-3 py-2 text-blue-500 font-medium hover:bg-gray-200 rounded-md" href="/html/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-home relative overflow-hidden h-64 md:h-80 flex items-center justify-center pt-16 md:pt-0" style="background: url('/images/contact\ us.png') no-repeat center center/cover;">
+        <div class="absolute inset-0 bg-black/50 z-10 flex items-center justify-center text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+                <p class="text-base md:text-lg text-white mb-8 max-w-2xl mx-auto">Get in Touch with Our Team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-12 md:py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center font-bold text-3xl md:text-4xl text-blue-500 mb-4">Get in Touch</h2>
+            <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+                We'd love to hear from you! Whether you have a question, a project idea, or need support, 
+                our team is ready to assist you.
+            </p>
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Contact Form -->
+                <div class="flex-1">
+                    <form id="contact-form" class="p-6 md:p-8 shadow-lg rounded-lg bg-white">
+                        <div class="mb-4">
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea id="message" name="message" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-500 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 hover:bg-blue-600 w-full md:w-auto">Send Message</button>
+                        </div>
+                        <div id="form-message" class="mt-4 text-center text-green-500 hidden">
+                            Thank you for contacting us! We will get back to you soon.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Map -->
+                <div class="flex-1">
+                    <div class="map-responsive shadow-lg rounded-lg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.654392695101!2d30.815680!3d-30.031990!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9516b9f6b8e5d3%3A0x7f3c7a2e3b8c8f8!2s61113%20Zwelisha%20Area%2C%20Adams%20Mission%2C%20Durban%204100!5e0!3m2!1sen!2sza!4v1697600000000!5m2!1sen!2sza"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-center">
+                <div class="contact-info">
+                    <div class="text-4xl text-blue-500 mb-2 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <h5 class="font-bold text-lg text-gray-800">Email</h5>
+                    <p class="text-gray-600">info@ndawonye.co.za</p>
+                    <h5 class="font-bold text-lg text-gray-800 mt-4">Phone</h5>
+                    <p class="text-gray-600">+27 123 456 789</p>
+                </div>
+                <div class="contact-info">
+                    <div class="text-4xl text-blue-500 mb-2 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <h5 class="font-bold text-lg text-gray-800">Address</h5>
+                    <p class="text-gray-600 max-w-sm mx-auto">61113 ZWELISHA AREA ADAMS MISSION 4100, Durban, South Africa</p>
+                </div>
+                <div class="contact-info">
+                    <div class="text-4xl text-blue-500 mb-2 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 16h-1V9h1v9zm4 0h-1V9h1v9zm-2-12c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        </svg>
+                    </div>
+                    <h5 class="font-bold text-lg text-gray-800">Social Media</h5>
+                    <div class="flex justify-center space-x-4 mt-2">
+                        <a href="#" class="text-gray-600 hover:text-blue-500 transition-colors duration-300" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2v-2.5c0-2.2 1.5-3.5 3.5-3.5h2c.71 0 1.3.16 1.79.22v2.54h-1.6c-1.1 0-1.4.67-1.4 1.4v1.7h3l-.5 3h-2.5v7h4c4.56-1.13 8-5.16 8-9.8z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500 transition-colors duration-300" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.37-.83.49-1.75.85-2.73 1.05C18.23 4.21 16.92 3.5 15.5 3.5c-2.45 0-4.44 1.99-4.44 4.44 0 .35.04.69.1.99-3.69-.18-6.97-1.95-9.16-4.63-.38.65-.59 1.4-.59 2.22 0 1.54.78 2.89 1.97 3.68-.72-.02-1.4-.22-2-.52v.06c0 2.16 1.54 3.96 3.58 4.39-.36.1-.74.15-1.13.15-.28 0-.55-.03-.81-.07.57 1.78 2.2 3.08 4.12 3.12C8.89 19.33 5.1 19.98 2 19.98c-1.97 0-3.6-.11-4.9-.3-.02-.1-.02-.21-.02-.32 0-.25.04-.5.1-.73.49-.19 1-.36 1.53-.5-.07-.27-.11-.55-.11-.84 0-.6.09-1.18.26-1.73-.59-.22-1.15-.5-1.68-.83-.15-.09-.3-.18-.45-.27-.47-.28-.93-.6-1.37-.95-.6-.48-1.14-1.04-1.61-1.69-.64-.86-1.1-1.75-1.37-2.7C.3 9.4.15 8.24.15 7c0-.23.01-.46.03-.69.04-.56.12-1.12.26-1.66.07-.26.15-.52.26-.77.3-.65.66-1.28 1.09-1.89.5-1.42 1.3-2.7 2.25-3.82.95-1.12 1.98-2.03 3.13-2.73.08-.05.16-.1.25-.15.4-.24.8-.45 1.22-.64.44-.2.9-.38 1.38-.52 1.04-.3 2.1-.48 3.2-.52 2.27-.08 4.4.45 6.3 1.54 1.9 1.09 3.3 2.8 4.2 4.8.44.9.79 1.83 1.04 2.8.25.97.4 1.95.42 2.97.02.4-.01.8-.08 1.2-.07.4-.18.79-.32 1.18-.15.4-.33.79-.54 1.17-.22.4-.46.77-.73 1.14z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500 transition-colors duration-300" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.17 14.17c-.57.57-1.32.88-2.12.88s-1.55-.31-2.12-.88c-.57-.57-.88-1.32-.88-2.12s.31-1.55.88-2.12c.57-.57 1.32-.88 2.12-.88s1.55.31 2.12.88c.57.57.88 1.32.88 2.12s-.31 1.55-.88 2.12zm3.33-4.17c0 1.84-1.5 3.33-3.33 3.33s-3.33-1.49-3.33-3.33S11.66 8.5 13.5 8.5s3.33 1.5 3.33 3.33zm-6.66-3.33c0 1.84-1.5 3.33-3.33 3.33s-3.33-1.49-3.33-3.33S7.16 8.5 9 8.5s3.33 1.5 3.33 3.33z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500 transition-colors duration-300" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8 17H5v-7h3v7zM6.5 8.25a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM19 17h-3v-3.5c0-1.2-.82-1.53-1.74-1.53-.9 0-1.26.68-1.26 1.53v3.5h-3v-7h3v1.61c.45-.63 1.1-1.1 2.21-1.1 1.63 0 3.79 1.13 3.79 4.88V17z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center bg-gray-800 text-white">
+        <p>&copy; 2025 Ndawonye. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar toggle for mobile
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Form submission logic
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+
+            if (contactForm && formMessage) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault(); // Prevent default form submission
+                    
+                    // Show success message
+                    formMessage.classList.remove('hidden');
+
+                    // Reset form after a short delay
+                    setTimeout(() => {
+                        contactForm.reset();
+                        formMessage.classList.add('hidden');
+                    }, 3000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

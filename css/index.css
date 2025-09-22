@@ -1,0 +1,117 @@
+  body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50;
+        }
+.moving-text-bar {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .moving-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: move-rtl 20s linear infinite;
+        }
+
+        @keyframes move-rtl {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+
+        .services-section .service-card {
+            background-color: #f7f7f7;
+            border-left: 5px solid #17a2b8;
+        }
+
+        .carousel-item {
+            display: none;
+        }
+        
+        .carousel-item.active {
+            display: block;
+        }
+
+      
+        .services-section .service-card {
+            background-color: #f7f7f7;
+            border-left: 5px solid #17a2b8;
+        }
+
+        .service-card .icon-box {
+            @apply p-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white;
+        }
+
+        .about-section .about-images img {
+            @apply transition-transform duration-300 hover:scale-105;
+        }
+
+        .why-choose-us {
+            background: url('https://placehold.co/1920x1080/06279d/FFFFFF?text=Why+Choose+Us') no-repeat center center/cover;
+            position: relative;
+            @apply py-20;
+        }
+
+        .why-choose-us::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .why-choose-us .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            @apply rounded-lg p-6 h-full transition-transform duration-300 hover:scale-105;
+        }
+
+        .why-choose-us .icon {
+            @apply text-4xl;
+        }
+
+        .testimonials-section .testimonial-card {
+            background-color: #f7f7f7;
+            @apply rounded-lg p-6 shadow-md mx-auto max-w-2xl;
+        }
+
+        .gallery-item img {
+            @apply transition-transform duration-300 hover:scale-105;
+        }
+
+        .cta-section {
+            background: linear-gradient(to right, #17a2b8, #20c997);
+            @apply text-white py-20 text-center;
+        }
+
+        .cta-section a {
+            @apply bg-white text-gray-800 font-bold py-3 px-6 rounded-lg transition-colors duration-300 hover:bg-gray-200;
+        }
+
+        .carousel-container {
+            position: relative;
+        }
+
+        .carousel-item {
+            display: none;
+        }
+        
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            @apply absolute top-1/2 -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full opacity-50 hover:opacity-100 transition-opacity;
+        }
+        
+        .carousel-control-prev {
+            @apply left-0;
+        }
+        
+        .carousel-control-next {
+            @apply right-0;
+        }
